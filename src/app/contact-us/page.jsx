@@ -10,7 +10,7 @@ const ContactUs = () => {
   return (
     <>
       <div className="w-full flex flex-row justify-center">
-        <div className="w-2/3 px-5 pb-20 rounded-3xl shadow-2xl">
+        <div className=" w-full mx-3 md:mx-0 md:w-2/3 px-5 pb-20 rounded-3xl shadow-2xl">
           <div className="w-full h-28">
             <div className="relative">
               <div
