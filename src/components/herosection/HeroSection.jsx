@@ -4,10 +4,12 @@ const HeroSection = () => {
   return (
     <>
       <div className="w-full flex flex-row justify-center mt-20 ">
-        <div className="w-3/4 ">
+        <div className=" w-full mx-1 md:mx-0 d:w-3/4 ">
           <p className="w-full sm:text-5xl text-2xl  font-extrabold text-center ">
             Revolutionizing the Way You Experience
-            <span className="text-[#012B84] ">Payments</span>
+            <span className="text-[#012B84] flex justify-center sm:inline ">
+              Payments
+            </span>
           </p>
 
           <p className="text-center my-5 text-lg font-semibold">

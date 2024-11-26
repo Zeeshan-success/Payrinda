@@ -18,13 +18,12 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-between mt-10 md:m-6 border rounded-xl h-16 py-2 shadow-lg  ">
-        <div className="w-1/6 ml-3 mt-1">
+        <div className="w-[150] md:w-[240] h-full mx-2  ">
           <Image
             src="https://www.payrinda.io/assets/home/images/logo.png"
             alt="Company Logo"
-            className="w-fit h-full"
-            width={200}
-            height={200}
+            width={800}
+            height={800}
             priority
           />
         </div>
