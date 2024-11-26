@@ -22,7 +22,7 @@ const Navbar = () => {
           <Image
             src="https://www.payrinda.io/assets/home/images/logo.png"
             alt="Company Logo"
-            width={200}
+            width={150}
             height={200}
             priority
           />
