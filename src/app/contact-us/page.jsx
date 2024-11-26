@@ -15,7 +15,7 @@ const ContactUs = () => {
             <div className="relative">
               <div
                 onClick={() => route.push("/")}
-                className="absolute right-3 top-5 w-10 text-center content-center text-white h-10 rounded-full bg-[#012B84] hover:bg-white hover:text-[#012B84] hover:duration-500 hover:border hover:border-[#012B84] "
+                className="absolute right-0 top-3 w-10 text-center content-center text-white h-10 rounded-full bg-[#012B84] hover:bg-white hover:text-[#012B84] hover:duration-500 hover:border hover:border-[#012B84] "
               >
                 <CloseIcon />
               </div>
