@@ -115,7 +115,7 @@ const Thirdbos = () => {
           <div className="w-full space-x-5  md:flex justify-between  mt-10">
             <div
               id="first"
-              className=" my-10 md:my-0 self-start lg:w-1/4 space-y-6 md:mt-[-120] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl "
+              className=" my-10 md:my-0 self-start lg:w-1/4 space-y-6 md:!-mt-[120px] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl "
             >
               <div className="flex justify-center">
                 <Image
@@ -156,7 +156,7 @@ const Thirdbos = () => {
             </div>
             <div
               id="third"
-              className=" my-10 md:my-0 lg:w-1/4 self-start  space-y-6 md:mt-[-120] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl "
+              className=" my-10 md:my-0 lg:w-1/4 self-start  space-y-6 md:!-mt-[120px] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl "
             >
               <div className="flex justify-center">
                 <Image
@@ -176,10 +176,10 @@ const Thirdbos = () => {
             </div>
           </div>
           <div
-            id="fouth"
+            id="forth"
             className="w-full space-x-5 md:flex justify-between mt-10"
           >
-            <div className="my-10 md:my-0 self-start lg:w-1/4 space-y-6 md:mt-[-120] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl ">
+            <div className="my-10 md:my-0 self-start lg:w-1/4 space-y-6 md:!-mt-[120px] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl ">
               <div className="flex justify-center">
                 <Image
                   src={Img3}
@@ -217,7 +217,7 @@ const Thirdbos = () => {
             </div>
             <div
               id="sixth"
-              className="my-10 md:my-0 lg:w-1/4 self-start space-y-6 md:mt-[-120] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl "
+              className="my-10 md:my-0 lg:w-1/4 self-start space-y-6 md:!-mt-[120px] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl "
             >
               <div className="flex justify-center">
                 <Image

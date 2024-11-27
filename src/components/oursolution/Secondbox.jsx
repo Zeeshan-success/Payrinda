@@ -31,7 +31,7 @@ const Secondbox = () => {
         id="secondbox"
         className="border  border-gray-300 bg-gradient-to-t from-[#E7EBF3] mb-5 mx-5 rounded-3xl"
       >
-        <div className="flex justify-start mt-[-80]">
+        <div className="flex justify-start !-mt-[80px]">
           <Image src={Img} alt="image" width={150} height={150} />
         </div>
         <div className="w-11/12 mx-auto text-center">
@@ -47,7 +47,7 @@ const Secondbox = () => {
             effortless for customers.
           </p>
         </div>
-        <div className="flex justify-end mb-[-80]">
+        <div className="flex justify-end !-mb-[80px]">
           <Image src={Img2} alt="image" width={150} height={150} />
         </div>
       </div>

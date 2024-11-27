@@ -12,7 +12,7 @@ const Welcom = () => {
       </div>
 
       <div className="border border-gray-400 bg-gradient-to-t from-[#E7EBF3] mb-5 mx-5 rounded-3xl">
-        <div className="flex justify-center mt-[-23]">
+        <div className="flex justify-center !-mt-[23px]">
           <Image src={Img} alt="image" width={50} height={50} />
         </div>
         <div className="w-11/12 mx-auto text-center">
