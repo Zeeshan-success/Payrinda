@@ -10,15 +10,14 @@ import Image from "next/image";
 
 const Navbar = () => {
   let [show, Setshow] = useState(true);
-  const route = useRouter();
 
   const showmenu = () => {
     Setshow(!show);
   };
   return (
     <>
-      <div className="flex justify-between mt-10 md:m-6 border rounded-xl h-16 py-2 shadow-lg  ">
-        <div className="w-[150] md:w-[240] h-full mx-2 my-auto  ">
+      <div className=" flex justify-between mt-10 md:m-6 border rounded-xl h-16 py-2 shadow-lg  ">
+        <div className="w-[150] md:w-[240]  md:mt-2 h-full mx-2   ">
           <Image
             src="https://www.payrinda.io/assets/home/images/logo.png"
             alt="Company Logo"
