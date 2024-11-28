@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Joinpara = () => {
@@ -42,7 +43,7 @@ const Joinpara = () => {
             Ready to elevate your payment experience?
           </p>
           <div className="flex justify-center">
-            <button className="md:text-xl md:px-5 md:py-3 text-[#082E7E] text-center bg-white rounded-full">
+            <button className="md:text-xl md:px-5 md:py-3 hover:bg-[#012B84] hover:text-white hover:border hover:border-white text-[#082E7E] text-center bg-white rounded-full">
               Get Start with Payrinda
             </button>
           </div>
