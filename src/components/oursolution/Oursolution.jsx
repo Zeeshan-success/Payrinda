@@ -7,7 +7,7 @@ import Forthbox from "./Forthbox";
 const Oursolution = () => {
   return (
     <>
-      <div className="mx-5 my-20">
+      <div id="our_solution" className="mx-5 my-20">
         <Fristbox />
         <Secondbox />
         <Thirdbos />

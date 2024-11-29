@@ -4,7 +4,7 @@ import Paraimg from "./Paraimg";
 const Aboutus = () => {
   return (
     <>
-      <div className="mx-5">
+      <div id="about_us" className="mx-5">
         <Paraimg />
 
         <div className="space-y-10 text-xl mx-5 my-16 font-medium">

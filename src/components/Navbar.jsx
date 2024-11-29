@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import CloseIcon from "@mui/icons-material/Close";
 import ShowMenu from "./ShowMenu";
-import { useRouter } from "next/navigation";
 import Navbtn from "./Navbtn";
 import Image from "next/image";
 
@@ -13,6 +12,13 @@ const Navbar = () => {
 
   const showmenu = () => {
     Setshow(!show);
+  };
+
+  const scrollonclick = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
   return (
     <>
@@ -29,22 +35,42 @@ const Navbar = () => {
         <div className="   w-full   md:inline-flex hidden">
           <ul className="w-full flex  justify-center space-x-10 lg:space-x-16 items-center">
             <li>
-              <button className="font-semibold hover:text-[#012B84]">
+              <button
+                onClick={() => {
+                  scrollonclick("home");
+                }}
+                className="font-semibold hover:text-[#012B84]"
+              >
                 Home
               </button>
             </li>
             <li>
-              <button className="font-semibold hover:text-[#012B84]">
+              <button
+                onClick={() => {
+                  scrollonclick("our_solution");
+                }}
+                className="font-semibold hover:text-[#012B84]"
+              >
                 Our Solutions
               </button>
             </li>
             <li>
-              <button className="font-semibold hover:text-[#012B84]">
+              <button
+                onClick={() => {
+                  scrollonclick("how_it_work");
+                }}
+                className="font-semibold hover:text-[#012B84]"
+              >
                 How it works
               </button>
             </li>
             <li>
-              <button className="font-semibold hover:text-[#012B84]">
+              <button
+                onClick={() => {
+                  scrollonclick("about_us");
+                }}
+                className="font-semibold hover:text-[#012B84]"
+              >
                 About Us
               </button>
             </li>
@@ -62,7 +88,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {show ? null : <ShowMenu />}
+      {show ? null : (
+        <ShowMenu showmenu={showmenu} scrollonclick={scrollonclick} />
+      )}
     </>
   );
 };

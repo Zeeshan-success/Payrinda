@@ -18,7 +18,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="w-full flex flex-row justify-center mt-20  ">
+      <div id="home" className="w-full flex flex-row justify-center mt-20  ">
         <div className=" w-full mx-1 md:mx-0 md:w-3/4 ">
           <p
             id="text1"
