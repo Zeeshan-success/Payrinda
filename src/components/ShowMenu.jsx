@@ -42,7 +42,7 @@ const ShowMenu = ({ showmenu, scrollonclick }) => {
             <li>
               <button
                 onClick={() => {
-                  scrollonclick(about_us);
+                  scrollonclick("about_us");
                   showmenu();
                 }}
                 className="font-semibold"
