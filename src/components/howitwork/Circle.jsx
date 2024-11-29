@@ -52,7 +52,7 @@ const Circle = () => {
   return (
     <>
       <div className="mx-5  lg:flex lg:justify-between">
-        <div className="border  border-transparent w-full   md:flex justify-between">
+        <div className="border  border-transparent w-full   md:flex justify-evenly">
           <div
             id="howfirst"
             className="border mx-auto my-7 rounded-t-full rounded-b-full bg-white max-w-96 p-4 text-center sm:h-[530px] lg:!-mb-[160px]"

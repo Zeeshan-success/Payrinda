@@ -63,7 +63,7 @@ const Howworkpara = () => {
           <div className="md:w-1/3 self-end text-xl font-normal">
             <p>
               Rewarding exemplary service should be as smooth as the experiences
-              they offer. With payrinda, it's just a scan away.
+              they offer. With payrinda, its just a scan away.
             </p>
           </div>
         </div>

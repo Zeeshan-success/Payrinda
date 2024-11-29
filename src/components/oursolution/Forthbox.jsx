@@ -42,7 +42,7 @@ const Forthbox = () => {
             <p className="my-auto mx-5 text-lg text-gray-600">
               Enhances employee motivation and engagement. Employees want
               equitable compensation, and with fewer guests carrying cash these
-              days, there's been a noticeable decline in tip earnings. By
+              days, theres been a noticeable decline in tip earnings. By
               offering guests an option for cashless gratuities, staff are
               further encouraged to deliver outstanding service, recognizing the
               potential rewards for their efforts.
@@ -81,7 +81,7 @@ const Forthbox = () => {
             <p className="my-auto mx-5 text-lg text-gray-600">
               For service industry merchants, depending on how your payroll is
               structured, you might choose to transfer tips straight into
-              employees' bank accounts or merge them with their usual salaries
+              employees bank accounts or merge them with their usual salaries
               via your payroll mechanism. Whichever approach you take, the
               digital tipping system streamlines the disbursement procedure and
               allows you to keep track of your staff tips earnings.
