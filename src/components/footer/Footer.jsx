@@ -42,7 +42,7 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className="sm:flex mt-5 space-y-4 sm:space-y-0">
+          <div className="sm:flex mt-5 justify-between">
             <Link href="#">
               <LinkedInIcon className="w-12 h-12" />
             </Link>
