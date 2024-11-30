@@ -16,7 +16,7 @@ const Welcom = () => {
           <Image src={Img} alt="image" width={50} height={50} />
         </div>
         <div className="w-11/12 mx-auto text-center">
-          <p className="text-xl md:my-5">
+          <p className="text-xl pb-5 md:my-5">
             Where innovation meets convenience in the financial services realm.
             As a burgeoning technology startup, our mission extends beyond mere
             transaction processing. Were here to redefine the payment landscape,
