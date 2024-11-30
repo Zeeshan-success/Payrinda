@@ -112,7 +112,7 @@ const Thirdbos = () => {
             </p>
           </div>
 
-          <div className="w-full space-x-5   md:flex justify-between  mt-10">
+          <div className="w-full md:space-x-5   md:flex justify-between  mt-10">
             <div
               id="first"
               className=" my-10 md:w-1/3   md:my-0 self-start lg:w-1/4 space-y-6 md:!-mt-[120px] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl "
@@ -175,7 +175,7 @@ const Thirdbos = () => {
               </p>
             </div>
           </div>
-          <div className="w-full  md:flex space-x-5  justify-between mt-10">
+          <div className="w-full  md:flex md:space-x-5  justify-between mt-10">
             <div
               id="forth"
               className="my-10 md:my-0 self-start md:w-1/3 lg:w-1/4 space-y-6 md:!-mt-[120px] px-10 py-20 rounded-t-full rounded-b-full  lg:h-[520] shadow-2xl "
