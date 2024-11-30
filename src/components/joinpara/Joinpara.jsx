@@ -28,7 +28,7 @@ const Joinpara = () => {
     <>
       <div
         id="joinpara"
-        className="mx-5 flex justify-center rounded-3xl text-white bg-[#082E7E] md:h-[350px] relative"
+        className="mx-5 my-10 flex justify-center rounded-3xl text-white bg-[#082E7E] md:h-[350px] relative"
       >
         <div className="absolute w-full h-full">
           <Image
@@ -47,7 +47,7 @@ const Joinpara = () => {
             Ready to elevate your payment experience?
           </p>
           <div className="flex justify-center">
-            <button className="md:text-xl md:px-5 md:py-3 px-4 py-2 hover:bg-[#012B84] hover:text-white text-[#082E7E] bg-white border border-transparent hover:border-white rounded-full transition duration-300">
+            <button className="md:text-xl  md:px-5 md:py-3 px-4 py-2 hover:bg-[#012B84] hover:text-white text-[#082E7E] bg-white border border-transparent hover:border-white rounded-full transition duration-300">
               Get Started with Payrinda
             </button>
           </div>
