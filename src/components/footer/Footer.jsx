@@ -4,7 +4,6 @@ import { Instagram } from "@mui/icons-material";
 
 import Image from "next/image";
 import Img from "@/assets/51.png";
-import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -20,7 +19,7 @@ const Footer = () => {
 
       <div className="relative z-10 sm:flex justify-between px-10 py-10">
         <div className="sm:w-1/3">
-          <div className="w-[150px] md:w-[240px] mb-5">
+          <div className="w-[150px] ml-1 md:w-[240px] mb-5">
             <Image
               src="https://www.payrinda.io/assets/home/images/logo.png"
               alt="Company Logo"
@@ -30,7 +29,7 @@ const Footer = () => {
             />
           </div>
 
-          <p className="mb-3">Subscribe for our Updates</p>
+          <p className="mb-3 ml-1">Subscribe for our Updates</p>
           <div className="border flex items-center justify-between py-2 px-3 border-white rounded-full">
             <input
               type="email"
@@ -42,20 +41,23 @@ const Footer = () => {
             </button>
           </div>
 
-          <div className="sm:flex mt-5 justify-between">
-            <Link href="#">
+          <div className="sm:flex ml-0 pl-0 mt-5 justify-start">
+            <a
+              href="https://www.linkedin.com/company/payrinda/"
+              target="_blank"
+            >
               <LinkedInIcon className="w-12 h-12" />
-            </Link>
-            <Link href="#">
+            </a>
+            <a>
               <FacebookIcon className="w-12 h-12" />
-            </Link>
-            <Link href="#">
+            </a>
+            <a>
               <Instagram className="w-12 h-12" />
-            </Link>
+            </a>
           </div>
         </div>
 
-        <div className="w-1/3">
+        <div className="w-1/3 ml-1">
           <p className="mb-2 font-bold">Contact Us:</p>
           <p>
             <a href="mailto:future@payrinda.io" className="hover:underline">

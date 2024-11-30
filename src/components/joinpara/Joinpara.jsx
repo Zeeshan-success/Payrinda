@@ -5,6 +5,7 @@ import Img from "@/assets/7.png";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRouter } from "next/navigation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +24,8 @@ const Joinpara = () => {
       },
     });
   }, []);
+
+  const route = useRouter();
 
   return (
     <>
@@ -47,7 +50,12 @@ const Joinpara = () => {
             Ready to elevate your payment experience?
           </p>
           <div className="flex justify-center">
-            <button className="md:text-xl  md:px-5 md:py-3 px-4 py-2 hover:bg-[#012B84] hover:text-white text-[#082E7E] bg-white border border-transparent hover:border-white rounded-full transition duration-300">
+            <button
+              onClick={() => {
+                route.push("/contact-us");
+              }}
+              className="md:text-xl  md:px-5 md:py-3 px-4 py-2 hover:bg-[#012B84] hover:text-white text-[#082E7E] bg-white border border-transparent hover:border-white rounded-full transition duration-300"
+            >
               Get Started with Payrinda
             </button>
           </div>
