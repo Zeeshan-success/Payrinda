@@ -52,7 +52,7 @@ const Circle = () => {
   return (
     <>
       <div className="mx-5  lg:flex lg:justify-between">
-        <div className="border  border-transparent w-full   md:flex justify-evenly">
+        <div className="border  border-transparent w-full    md:flex justify-evenly">
           <div
             id="howfirst"
             className="border mx-auto my-7 rounded-t-full rounded-b-full bg-white max-w-96 p-4 text-center sm:h-[530px] lg:!-mb-[160px]"
@@ -69,7 +69,7 @@ const Circle = () => {
                 01
               </p>
               <p className="text-3xl font-bold">Scan and Open</p>
-              <p className="text-xl">
+              <p className="text-xl pb-10">
                 Spot a payrinda QR code at the establishment? Just scan it. Our
                 user-friendly web interface will pop up right on your mobile
                 device. No app installations. No hassles.
@@ -92,7 +92,7 @@ const Circle = () => {
                 02
               </p>
               <p className="text-3xl font-bold">Scan and Open</p>
-              <p className="text-xl">
+              <p className="text-xl pb-10">
                 Spot a payrinda QR code at the establishment? Just scan it. Our
                 user-friendly web interface will pop up right on your mobile
                 device. No app installations. No hassles.
@@ -115,7 +115,7 @@ const Circle = () => {
                 03
               </p>
               <p className="text-3xl font-bold">Scan and Open</p>
-              <p className="text-xl">
+              <p className="text-xl pb-10">
                 Spot a payrinda QR code at the establishment? Just scan it. Our
                 user-friendly web interface will pop up right on your mobile
                 device. No app installations. No hassles.
@@ -140,7 +140,7 @@ const Circle = () => {
                 03
               </p>
               <p className="text-3xl font-bold">Scan and Open</p>
-              <p className="text-xl">
+              <p className="text-xl pb-10">
                 Spot a payrinda QR code at the establishment? Just scan it. Our
                 user-friendly web interface will pop up right on your mobile
                 device. No app installations. No hassles.
