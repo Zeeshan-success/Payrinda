@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import { Formvalidation } from "../formvalidationscehma/Formvalidation";
+import axios from "axios";
 
 const initialValues = {
   name: "",
@@ -14,8 +15,34 @@ const From = () => {
     useFormik({
       initialValues: initialValues,
       validationSchema: Formvalidation,
-      onSubmit: (value) => {
-        console.log("helo", value);
+      onSubmit: async (value) => {
+        console.log("hello", value.city);
+
+        try {
+          const response = await fetch("http://localhost:3000/api/customer", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json", // Ensure the server knows you're sending JSON
+            },
+            body: JSON.stringify(value),
+          });
+
+          const data = await response.json(); // Properly await the JSON response
+
+          if (response.ok) {
+            // Check if the status is in the 200-299 range
+            alert(
+              "Successfully added! Comapny will contact you as soon as posible"
+            );
+          } else {
+            alert(data.message || "There was an error, please try again.");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          alert(
+            "An unexpected error occurred. Please try again. Or may be Email or Phone number already used kindly used another Number or Email"
+          );
+        }
       },
     });
 
