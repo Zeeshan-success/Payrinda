@@ -17,7 +17,7 @@ const From = () => {
       validationSchema: Formvalidation,
       onSubmit: async (value, action) => {
         try {
-          const response = await fetch("http://localhost:3000/api/customer", {
+          const response = await fetch("/api/customer", {
             method: "POST",
             headers: {
               "Content-Type": "application/json", // Ensure the server knows you're sending JSON
