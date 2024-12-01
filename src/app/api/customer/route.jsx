@@ -1,7 +1,16 @@
+import Cors from "cors";
+
 import mongoose from "mongoose";
 import { connectionString } from "../../../../lib/database/database_string";
 import { NextResponse } from "next/server";
 import { customer } from "./model/CustomerSchema";
+
+const cors = Cors({
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: "https://payrinda.vercel.app/", // Set your front-end URL here
+});
+
+const runCors = (req, res, next) => cors(req, res, next);
 
 // Helper to check database connection
 const connectToDatabase = async () => {
@@ -12,6 +21,7 @@ const connectToDatabase = async () => {
 };
 
 export const POST = async (req) => {
+  runCors(req, res, () => {});
   try {
     // Step 1: Parse incoming JSON payload
     const payload = await req.json();
