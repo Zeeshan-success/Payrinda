@@ -124,7 +124,7 @@ const Accountinfo = () => {
       <div className="mx-5 space-y-10 md:space-y-0 md:my-20 md:flex ">
         <div
           id="accountinfo3"
-          className="shadow-xl mt-5 sm:mt-0 p-5 s sm:flex justify-between md:w-1/2"
+          className="shadow-xl mt-10 md:mt-0 p-5 s sm:flex justify-between md:w-1/2"
         >
           <div className="w-1/2 rotate-180 sm:hidden flex justify-end">
             <Image src={Img3} alt="this is image" height={200} width={220} />
