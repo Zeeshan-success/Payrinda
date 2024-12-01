@@ -8,10 +8,7 @@ const connectToDatabase = async () => {
   if (mongoose.connections[0].readyState) {
     return; // Already connected
   }
-  await mongoose.connect(connectionString, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  await mongoose.connect(connectionString);
 };
 
 export const POST = async (req) => {
