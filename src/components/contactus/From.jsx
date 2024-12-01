@@ -15,9 +15,7 @@ const From = () => {
     useFormik({
       initialValues: initialValues,
       validationSchema: Formvalidation,
-      onSubmit: async (value) => {
-        console.log("hello", value.city);
-
+      onSubmit: async (value, action) => {
         try {
           const response = await fetch("http://localhost:3000/api/customer", {
             method: "POST",
@@ -34,13 +32,14 @@ const From = () => {
             alert(
               "Successfully added! Comapny will contact you as soon as posible"
             );
+            action.resetForm();
           } else {
             alert(data.message || "There was an error, please try again.");
           }
         } catch (error) {
           console.error("Error:", error);
           alert(
-            "An unexpected error occurred. Please try again. Or may be Email or Phone number already used kindly used another Number or Email"
+            "An unexpected error occurred. Please try again. Or may be Email or Phone number already used kindly use another Number or Email"
           );
         }
       },
