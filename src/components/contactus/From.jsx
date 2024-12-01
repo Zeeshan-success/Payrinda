@@ -17,13 +17,16 @@ const From = () => {
       validationSchema: Formvalidation,
       onSubmit: async (value, action) => {
         try {
-          const response = await fetch("/api/customer", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json", // Ensure the server knows you're sending JSON
-            },
-            body: JSON.stringify(value),
-          });
+          const response = await fetch(
+            "https://payrinda.vercel.app/api/customer",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json", // Ensure the server knows you're sending JSON
+              },
+              body: JSON.stringify(value),
+            }
+          );
 
           const data = await response.json(); // Properly await the JSON response
 
