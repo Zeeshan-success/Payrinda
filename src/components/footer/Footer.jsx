@@ -1,6 +1,7 @@
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { Instagram } from "@mui/icons-material";
+import logo from "@/assets/payrinda logo.png";
 
 import Image from "next/image";
 import Img from "@/assets/51.png";
@@ -21,7 +22,7 @@ const Footer = () => {
         <div className="sm:w-1/3">
           <div className="w-[150px] ml-1 md:w-[240px] mb-5">
             <Image
-              src="https://www.payrinda.io/assets/home/images/logo.png"
+              src={logo}
               alt="Company Logo"
               width={150}
               height={50}

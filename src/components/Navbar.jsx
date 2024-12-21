@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import ShowMenu from "./ShowMenu";
 import Navbtn from "./Navbtn";
 import Image from "next/image";
+import logo from "@/assets/payrinda logo.png";
 
 const Navbar = () => {
   let [show, Setshow] = useState(true);
@@ -25,7 +26,7 @@ const Navbar = () => {
       <div className=" flex justify-between mt-10 md:m-6 border rounded-xl h-16 py-2 shadow-lg  ">
         <div className="w-[150] md:w-[240]  md:mt-2 h-full mx-2   ">
           <Image
-            src="https://www.payrinda.io/assets/home/images/logo.png"
+            src={logo}
             alt="Company Logo"
             width={150}
             height={200}

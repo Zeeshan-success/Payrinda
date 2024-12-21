@@ -4,6 +4,7 @@ import Image from "next/image";
 import CloseIcon from "@mui/icons-material/Close";
 import { useRouter } from "next/navigation";
 import From from "@/components/contactus/From";
+import logo from "@/assets/payrinda logo.png";
 
 const ContactUs = () => {
   const route = useRouter();
@@ -24,7 +25,7 @@ const ContactUs = () => {
 
           <div>
             <Image
-              src="https://www.payrinda.io/assets/home/images/logo.png"
+              src={logo}
               alt="Company Logo"
               className="w-fit h-full"
               width={200}
